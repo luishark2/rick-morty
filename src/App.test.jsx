@@ -1,12 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-/* test('renders app title', () => {
+test('renders rick morty title', () => {
   render(<App />);
-  const title = screen.getByText(/rick morty/i);
-  expect(title).toBeInTheDocument();
-}); */
-
-test('dummy test', () => {
-  expect(true).toBe(true);
+  const titleElement = screen.getByText(/rick morty/i);
+  expect(titleElement).toBeInTheDocument();
 });
